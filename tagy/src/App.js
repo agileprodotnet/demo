@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { Component } from 'react';
 import {
   MDBNavbar,
@@ -174,6 +175,28 @@ class App extends Component {
       </Router>
     );
   }
+=======
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+import Header from './Layout/Header'
+import Footer from './Layout/Footer'
+import {
+  MDBEdgeHeader
+} from 'mdbreact'
+
+
+function App() {
+  return (
+    <>
+      <Header />
+      <div class="mt-3 mb-3">
+        Content
+    </div>
+      <Footer />
+    </>
+  );
+>>>>>>> 180d7fa9d405379bcd9b41eef139ef9e0a14947f
 }
 
 export default App;
