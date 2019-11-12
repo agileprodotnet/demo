@@ -3,8 +3,6 @@ import {
     MDBContainer,
     MDBCol,
     MDBRow,
-    MDBInput,
-    MDBBtn
 } from "mdbreact";
 import "../pages/HomePage.css";
 import SectionContainer from "../components/sectionContainer";

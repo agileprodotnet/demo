@@ -8,8 +8,6 @@ import {
   MDBNavItem,
   MDBFooter,
   MDBNavLink,
-  MDBTooltip,
-  MDBIcon
 } from 'mdbreact';
 import { ReactComponent as Logo } from './assets/logo.svg';
 import { BrowserRouter as Router } from 'react-router-dom';
