@@ -42,7 +42,7 @@ export default class Register extends React.Component {
                                         </label>
                                         <input type="password" id="defaultFormRegisterPasswordEx" className="form-control" />
                                         <div className="text-center mt-4">
-                                            <button className="btn btn-unique" type="submit">
+                                            <button className="btn btn-indigo" type="submit">
                                                 Register
                                             </button>
                                         </div>
