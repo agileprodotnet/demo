@@ -67,14 +67,7 @@ class App extends Component {
                     <strong>Home</strong>
                   </MDBNavLink>
                 </MDBNavItem>
-                <MDBNavItem>
-                  <MDBNavLink
-                    onClick={this.closeCollapse('mainNavbarCollapse')}
-                    to='/css'
-                  >
-                    <strong>CSS</strong>
-                  </MDBNavLink>
-                </MDBNavItem>
+
                 <MDBNavItem>
                   <MDBNavLink
                     onClick={this.closeCollapse('mainNavbarCollapse')}
@@ -83,80 +76,17 @@ class App extends Component {
                     <strong>Components</strong>
                   </MDBNavLink>
                 </MDBNavItem>
+
                 <MDBNavItem>
                   <MDBNavLink
                     onClick={this.closeCollapse('mainNavbarCollapse')}
-                    to='/advanced'
+                    to='/login'
                   >
-                    <strong>Advanced</strong>
+                    <strong>Login</strong>
                   </MDBNavLink>
                 </MDBNavItem>
-                <MDBNavItem>
-                  <MDBNavLink
-                    onClick={this.closeCollapse('mainNavbarCollapse')}
-                    to='/navigation'
-                  >
-                    <strong>Navigation</strong>
-                  </MDBNavLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBNavLink
-                    onClick={this.closeCollapse('mainNavbarCollapse')}
-                    to='/forms'
-                  >
-                    <strong>Forms</strong>
-                  </MDBNavLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBNavLink
-                    onClick={this.closeCollapse('mainNavbarCollapse')}
-                    to='/tables'
-                  >
-                    <strong>Tables</strong>
-                  </MDBNavLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBNavLink
-                    onClick={this.closeCollapse('mainNavbarCollapse')}
-                    to='/modals'
-                  >
-                    <strong>Modals</strong>
-                  </MDBNavLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBNavLink
-                    onClick={this.closeCollapse('mainNavbarCollapse')}
-                    to='/addons'
-                  >
-                    <strong>Addons</strong>
-                  </MDBNavLink>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBTooltip placement='bottom' domElement style={{ display: "block" }}>
-                    <a
-                      className='nav-link Ripple-parent'
-                      href='https://mdbootstrap.com/products/react-ui-kit/'
-                      target='_blank'
-                      rel="noopener noreferrer"
-                    >
-                      <strong><MDBIcon far icon="gem" /></strong>
-                    </a>
-                    <span>PRO</span>
-                  </MDBTooltip>
-                </MDBNavItem>
-                <MDBNavItem>
-                  <MDBTooltip placement='bottom' domElement style={{ display: "block" }}>
-                    <a
-                      className='nav-link Ripple-parent'
-                      href='https://mdbootstrap.com/docs/react/getting-started/download/'
-                      target='_blank'
-                      rel="noopener noreferrer"
-                    >
-                      <strong><MDBIcon icon="download" /></strong>
-                    </a>
-                    <span>FREE</span>
-                  </MDBTooltip>
-                </MDBNavItem>
+
+
               </MDBNavbarNav>
             </MDBCollapse>
           </MDBNavbar>
