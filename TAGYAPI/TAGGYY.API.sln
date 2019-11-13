@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TAGY.Business", "TAGY.Business\TAGY.Business.csproj", "{6B900BB4-F35D-4E50-BCAE-6E6BECC8517E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TAGY.Common", "TAGY.Common\TAGY.Common.csproj", "{6828718E-06DE-44D0-9BA9-A18A74B3BE1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TAGY.Data", "TAGY.Data\TAGY.Data.csproj", "{B7E8A544-1CC1-4EA9-BC97-6930264BD68C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TAGY.Entities", "TAGY.Entity\TAGY.Entities.csproj", "{F919ED43-CD02-4681-B4F0-767055B409D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TAGY.Model", "TAGY.Model\TAGY.Model.csproj", "{214C5791-4D94-48A5-8998-4F9D9D7143B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TAGGYY.WEBAPI", "TAGGYY.API\TAGGYY.WEBAPI.csproj", "{4D94ADCF-5D4D-4231-8995-B6358F7CDEBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B900BB4-F35D-4E50-BCAE-6E6BECC8517E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B900BB4-F35D-4E50-BCAE-6E6BECC8517E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B900BB4-F35D-4E50-BCAE-6E6BECC8517E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B900BB4-F35D-4E50-BCAE-6E6BECC8517E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6828718E-06DE-44D0-9BA9-A18A74B3BE1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6828718E-06DE-44D0-9BA9-A18A74B3BE1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6828718E-06DE-44D0-9BA9-A18A74B3BE1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6828718E-06DE-44D0-9BA9-A18A74B3BE1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7E8A544-1CC1-4EA9-BC97-6930264BD68C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7E8A544-1CC1-4EA9-BC97-6930264BD68C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7E8A544-1CC1-4EA9-BC97-6930264BD68C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7E8A544-1CC1-4EA9-BC97-6930264BD68C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F919ED43-CD02-4681-B4F0-767055B409D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F919ED43-CD02-4681-B4F0-767055B409D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F919ED43-CD02-4681-B4F0-767055B409D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F919ED43-CD02-4681-B4F0-767055B409D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{214C5791-4D94-48A5-8998-4F9D9D7143B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{214C5791-4D94-48A5-8998-4F9D9D7143B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{214C5791-4D94-48A5-8998-4F9D9D7143B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{214C5791-4D94-48A5-8998-4F9D9D7143B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D94ADCF-5D4D-4231-8995-B6358F7CDEBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D94ADCF-5D4D-4231-8995-B6358F7CDEBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D94ADCF-5D4D-4231-8995-B6358F7CDEBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D94ADCF-5D4D-4231-8995-B6358F7CDEBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A8DD0E6-DFD6-45AC-B871-26821668DC7D}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,5 @@
+D:\TAGYAPI\TAGY.Model\bin\Debug\TAGY.Model.dll
+D:\TAGYAPI\TAGY.Model\bin\Debug\TAGY.Model.pdb
+D:\TAGYAPI\TAGY.Model\obj\Debug\TAGY.Model.csproj.CoreCompileInputs.cache
+D:\TAGYAPI\TAGY.Model\obj\Debug\TAGY.Model.dll
+D:\TAGYAPI\TAGY.Model\obj\Debug\TAGY.Model.pdb

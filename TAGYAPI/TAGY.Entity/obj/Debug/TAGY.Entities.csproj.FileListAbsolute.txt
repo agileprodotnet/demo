@@ -1,0 +1,6 @@
+D:\TAGYAPI\TAGY.Entity\bin\Debug\TAGY.Entity.dll
+D:\TAGYAPI\TAGY.Entity\bin\Debug\TAGY.Entity.pdb
+D:\TAGYAPI\TAGY.Entity\obj\Debug\TAGY.Entities.csproj.CoreCompileInputs.cache
+D:\TAGYAPI\TAGY.Entity\obj\Debug\TAGY.Entity.dll
+D:\TAGYAPI\TAGY.Entity\obj\Debug\TAGY.Entity.pdb
+D:\TAGYAPI\TAGY.Entity\obj\Debug\TAGY.Entities.csprojAssemblyReference.cache

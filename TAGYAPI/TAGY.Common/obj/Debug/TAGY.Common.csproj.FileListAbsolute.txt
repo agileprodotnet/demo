@@ -1,0 +1,6 @@
+D:\TAGYAPI\TAGY.Common\bin\Debug\TAGY.Common.dll
+D:\TAGYAPI\TAGY.Common\bin\Debug\TAGY.Common.pdb
+D:\TAGYAPI\TAGY.Common\obj\Debug\TAGY.Common.csproj.CoreCompileInputs.cache
+D:\TAGYAPI\TAGY.Common\obj\Debug\TAGY.Common.dll
+D:\TAGYAPI\TAGY.Common\obj\Debug\TAGY.Common.pdb
+D:\TAGYAPI\TAGY.Common\obj\Debug\TAGY.Common.csprojAssemblyReference.cache

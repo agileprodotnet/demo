@@ -1,0 +1,12 @@
+D:\TAGYAPI\TAGY.Data\bin\Debug\TAGY.Data.dll.config
+D:\TAGYAPI\TAGY.Data\bin\Debug\TAGY.Data.dll
+D:\TAGYAPI\TAGY.Data\bin\Debug\TAGY.Data.pdb
+D:\TAGYAPI\TAGY.Data\bin\Debug\EntityFramework.dll
+D:\TAGYAPI\TAGY.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\TAGYAPI\TAGY.Data\bin\Debug\EntityFramework.xml
+D:\TAGYAPI\TAGY.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\TAGYAPI\TAGY.Data\obj\Debug\TAGY.Data.csproj.CoreCompileInputs.cache
+D:\TAGYAPI\TAGY.Data\obj\Debug\TAGY.Data.csproj.CopyComplete
+D:\TAGYAPI\TAGY.Data\obj\Debug\TAGY.Data.dll
+D:\TAGYAPI\TAGY.Data\obj\Debug\TAGY.Data.pdb
+D:\TAGYAPI\TAGY.Data\obj\Debug\TAGY.Data.csprojAssemblyReference.cache

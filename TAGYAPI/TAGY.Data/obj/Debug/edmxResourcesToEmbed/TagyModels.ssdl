@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TagyModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Follows">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="bigint" Nullable="false" />
+    <Property Name="FollowerUserID" Type="varchar(max)" />
+    <Property Name="CreatedDateTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedDatetime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Likes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MessageID" Type="bigint" Nullable="false" />
+    <Property Name="UserID" Type="bigint" Nullable="false" />
+    <Property Name="TimeStamp" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+    <Property Name="CreatedDateTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedDateTime" Type="datetime" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Media">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MessageID" Type="bigint" Nullable="false" />
+    <Property Name="Resource" Type="varchar(max)" Nullable="false" />
+    <Property Name="TimeStamp" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+    <Property Name="CreatedDateTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedDatetime" Type="datetime" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Messages">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Message" Type="varchar(max)" Nullable="false" />
+    <Property Name="UserID" Type="bigint" Nullable="false" />
+    <Property Name="City" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Country" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Pincode" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Latitude" Type="varchar(max)" Nullable="false" />
+    <Property Name="Longitude" Type="varchar(max)" Nullable="false" />
+    <Property Name="TimeStamp" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedDateTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedDatetime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PreferedLocation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Lat" Type="varchar(max)" Nullable="false" />
+    <Property Name="Long" Type="varchar(max)" Nullable="false" />
+    <Property Name="UserID" Type="bigint" />
+    <Property Name="CreatedDateTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedDatetime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Role_User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RoleID" Type="bigint" Nullable="false" />
+    <Property Name="UserID" Type="bigint" Nullable="false" />
+    <Property Name="CreatedDateTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedDatetime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RoleName" Type="varchar(max)" Nullable="false" />
+    <Property Name="CreatedDateTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedDatetime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Share">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MessageID" Type="bigint" Nullable="false" />
+    <Property Name="FromUserID" Type="bigint" Nullable="false" />
+    <Property Name="ToUserID" Type="bigint" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="Timestamp" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+    <Property Name="CreatedDateTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedDatetime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TAGS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TagName" Type="varchar(max)" Nullable="false" />
+    <Property Name="CreatedDateTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedDatetime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tags_Messages">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MessageId" Type="bigint" Nullable="false" />
+    <Property Name="CreatedDateTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedDatetime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EmailID" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Address1" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Address2" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="City" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="State" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Country" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="TimeStamp" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+    <Property Name="CreatedDateTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedDatetime" Type="datetime" Nullable="false" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="IsVender" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="Status" Type="bit" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Follows_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="Follows" Type="Self.Follows" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Follows">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Likes_Messages">
+    <End Role="Messages" Type="Self.Messages" Multiplicity="1" />
+    <End Role="Likes" Type="Self.Likes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Messages">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Likes">
+        <PropertyRef Name="MessageID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Media_Messages">
+    <End Role="Messages" Type="Self.Messages" Multiplicity="1" />
+    <End Role="Media" Type="Self.Media" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Messages">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Media">
+        <PropertyRef Name="MessageID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Messages_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="Messages" Type="Self.Messages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Messages">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PreferedLocation_User">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="PreferedLocation" Type="Self.PreferedLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PreferedLocation">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Role_User_Roles">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="1" />
+    <End Role="Role_User" Type="Self.Role_User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Role_User">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Role_User_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="Role_User" Type="Self.Role_User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Role_User">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tags_Messages_Messages">
+    <End Role="Messages" Type="Self.Messages" Multiplicity="1" />
+    <End Role="Tags_Messages" Type="Self.Tags_Messages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Messages">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Tags_Messages">
+        <PropertyRef Name="MessageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="TagyModelStoreContainer">
+    <EntitySet Name="Follows" EntityType="Self.Follows" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Likes" EntityType="Self.Likes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Media" EntityType="Self.Media" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Messages" EntityType="Self.Messages" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PreferedLocation" EntityType="Self.PreferedLocation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Role_User" EntityType="Self.Role_User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Share" EntityType="Self.Share" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TAGS" EntityType="Self.TAGS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tags_Messages" EntityType="Self.Tags_Messages" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Follows_User" Association="Self.FK_Follows_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Follows" EntitySet="Follows" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Likes_Messages" Association="Self.FK_Likes_Messages">
+      <End Role="Messages" EntitySet="Messages" />
+      <End Role="Likes" EntitySet="Likes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Media_Messages" Association="Self.FK_Media_Messages">
+      <End Role="Messages" EntitySet="Messages" />
+      <End Role="Media" EntitySet="Media" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Messages_User" Association="Self.FK_Messages_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Messages" EntitySet="Messages" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PreferedLocation_User" Association="Self.FK_PreferedLocation_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="PreferedLocation" EntitySet="PreferedLocation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Role_User_Roles" Association="Self.FK_Role_User_Roles">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="Role_User" EntitySet="Role_User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Role_User_User" Association="Self.FK_Role_User_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Role_User" EntitySet="Role_User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tags_Messages_Messages" Association="Self.FK_Tags_Messages_Messages">
+      <End Role="Messages" EntitySet="Messages" />
+      <End Role="Tags_Messages" EntitySet="Tags_Messages" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

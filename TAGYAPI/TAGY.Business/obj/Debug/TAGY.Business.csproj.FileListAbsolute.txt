@@ -1,0 +1,6 @@
+D:\TAGYAPI\TAGY.Business\bin\Debug\TAGY.Business.dll
+D:\TAGYAPI\TAGY.Business\bin\Debug\TAGY.Business.pdb
+D:\TAGYAPI\TAGY.Business\obj\Debug\TAGY.Business.csproj.CoreCompileInputs.cache
+D:\TAGYAPI\TAGY.Business\obj\Debug\TAGY.Business.dll
+D:\TAGYAPI\TAGY.Business\obj\Debug\TAGY.Business.pdb
+D:\TAGYAPI\TAGY.Business\obj\Debug\TAGY.Business.csprojAssemblyReference.cache
