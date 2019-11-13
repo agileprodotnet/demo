@@ -9,41 +9,70 @@ import SectionContainer from "../components/sectionContainer";
 
 
 export default class Register extends React.Component {
+
+    constructor() {
+        super();
+        this.state = {
+            name: '',
+            email: '',
+            password: ''
+        }
+    }
+
+    changeHandler = (e) => {
+        this.setState({ [e.target.name] : e.target.value })
+    }
+
+
+
+    submitHandler = (e) => {
+        e.preventDefault();
+        console.warn(this.state);
+    }
+
     scrollToTop = () => window.scrollTo(0, 0);
+
     render() {
+        const { name, email, password } = this.state
         return (
+
             <>
                 <MDBContainer>
                     <MDBRow>
                         <SectionContainer header="Register" className="row" noBorder>
                             <MDBCol md="6">
                                 <SectionContainer>
-                                    <form>
-                                        <p className="h5 text-center mb-4">Sign up</p>
-                                        <label htmlFor="defaultFormRegisterNameEx" className="grey-text">
-                                            Your name
+                                    <form onSubmit={this.submitHandler}>
+                                    <p className="h5 text-center mb-4">Sign up</p>
+                                    <label className="grey-text">
+                                        Your name
                                         </label>
-                                        <input type="text" id="defaultFormRegisterNameEx" className="form-control" />
-                                        <br />
-                                        <label htmlFor="defaultFormRegisterEmailEx" className="grey-text">
-                                            Your email
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        className="form-control"
+                                        onChange={this.changeHandler} />
+                                    <br />
+                                    <label className="grey-text">
+                                        Your email
                                         </label>
-                                        <input type="email" id="defaultFormRegisterEmailEx" className="form-control" />
-                                        <br />
-                                        <label htmlFor="defaultFormRegisterConfirmEx" className="grey-text">
-                                            Confirm your email
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        className="form-control"
+                                        onChange={this.changeHandler} />
+                                    <br />
+                                    <label className="grey-text">
+                                        Your password
                                         </label>
-                                        <input type="email" id="defaultFormRegisterConfirmEx" className="form-control" />
-                                        <br />
-                                        <label htmlFor="defaultFormRegisterPasswordEx" className="grey-text">
-                                            Your password
-                                        </label>
-                                        <input type="password" id="defaultFormRegisterPasswordEx" className="form-control" />
-                                        <div className="text-center mt-4">
-                                            <button className="btn btn-indigo" type="submit">
-                                                Register
-                                            </button>
-                                        </div>
+                                    <input
+                                        type="password"
+                                        name="password"
+                                        className="form-control"
+                                        onChange={this.changeHandler} />
+                                    <div className="text-center mt-4">
+                                        <button className="btn btn-indigo">Register</button>
+                                    </div>
                                     </form>
                                 </SectionContainer>
                             </MDBCol>
